@@ -1,0 +1,9 @@
+package API.Util;
+//Scanner 
+public class ScanerTest {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

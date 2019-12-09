@@ -1,0 +1,22 @@
+package chap04;
+// IF문 중첩 예제
+import java.util.Scanner;
+
+public class IFTest02_Teacher {
+
+	public static void main(String[] args) 
+	{
+		Scanner key = new Scanner (System.in);
+		System.out.println("성함 ");
+		String gender = key.nextInt();
+		if(gender<1 | gender>4)
+		{
+			System.out.println("숫자를 잘못입력");
+		}
+		else 
+		{
+			System.out.println("나이");
+		}
+	}
+
+}

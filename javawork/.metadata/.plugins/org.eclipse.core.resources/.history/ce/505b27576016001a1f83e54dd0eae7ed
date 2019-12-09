@@ -1,0 +1,12 @@
+package chap04;
+
+public class IFTest01 {
+	public static void main(String[] args) {
+		int num = 90;
+		if(num>=90)
+			System.out.println("¸¸Á·");
+		
+		
+	}
+
+}

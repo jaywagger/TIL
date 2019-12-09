@@ -1,0 +1,53 @@
+package chap04;
+
+import java.util.Scanner;
+//숫자를 입려받아서 음수인지 양수인지 출력하고
+//단, 양수인 경우 짝수인지 홀수인지 출력하기. 0은 제외
+
+public class IFExam02 {
+	public static void main(String[] args) {
+		Scanner key = new Scanner(System.in);
+		
+		System.out.println("당신의 성함을 입력하세요: ");
+		String name = key.next();
+		System.out.println("안녕하세요 "+name+"님");
+		System.out.println();
+
+		System.out.println(name+"님의 성별을 입력하세요");
+		int sex = key.nextInt();
+		System.out.println(name+"님의 성별은"+sex);
+		System.out.println();
+		
+		System.out.println(name+"님의 나이를 입력하세요");
+		int num = key.nextInt();
+		System.out.println(name+"님의 나이는"+num);
+		System.out.println();
+	
+		if(num == 1&& num == 3)
+		{
+			
+			System.out.println("입력하신 값은 양수입니다.");
+			System.out.println();
+			System.out.print(num+"은 ");
+			
+			if(num%2==0)
+			{
+				System.out.println("짝수입니다");
+				System.out.println();
+			}
+			else 
+			{
+				System.out.print("홀수입니다");
+				System.out.println();
+			}
+		}
+		else 
+		{
+			System.out.println("입력하신 값은 음수이니다");
+			
+		}
+		
+				
+	}
+
+}

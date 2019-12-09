@@ -1,0 +1,14 @@
+package chap04;
+
+import java.util.Scanner;
+
+//If-else 
+public class MultiifTest {
+	public static void main(String[] args) 
+	{
+		Scanner key = new Scanner(System.in)
+		System.out.println("주민번호를 입력하세요: ");
+		
+	}
+
+}

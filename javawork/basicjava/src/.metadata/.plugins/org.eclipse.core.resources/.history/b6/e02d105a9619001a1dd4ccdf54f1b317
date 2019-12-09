@@ -1,0 +1,21 @@
+package chap01.basic;
+
+public class VarEx2 {
+
+	public static void main(String[] args) 
+	{
+		int x = 10;
+		int y = 20;
+		int temp = 0;
+			
+		System.out.println("X:"+ x + " Y:" + y);
+			
+		tmp = x;
+		x = y;
+		y = tmp;
+		
+		
+
+	}
+
+}

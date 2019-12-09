@@ -1,0 +1,23 @@
+package chap04;
+
+import java.util.Random;
+
+public class IFTest01 {
+	public static void main(String[] args) {
+		
+		Random r = new Random();
+		
+		int i = r.nextInt();
+		if(i>=90)
+		{
+			System.out.println("만족");
+			System.out.println("두 번째 문장");
+		}
+		else 
+		{
+			System.out.println("종료");
+		}
+		
+	}
+
+}

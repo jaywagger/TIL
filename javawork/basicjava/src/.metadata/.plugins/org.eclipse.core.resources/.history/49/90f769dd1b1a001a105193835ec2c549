@@ -1,0 +1,11 @@
+package chap05.array;
+
+public class ArrayTest04 {
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

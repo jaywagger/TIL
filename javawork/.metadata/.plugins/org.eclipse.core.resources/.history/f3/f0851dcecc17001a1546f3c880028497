@@ -1,0 +1,10 @@
+package chap04;
+//Switch를 사용하기 위한 기본 문법
+public class SwitchTest01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

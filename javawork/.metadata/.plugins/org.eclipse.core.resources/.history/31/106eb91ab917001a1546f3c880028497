@@ -1,0 +1,26 @@
+package Self.Exercise;
+
+public class Workbook01 
+{
+	public static void main(String[] args) 
+	{
+		int i = 940213;
+		int n = 1;
+		
+		System.out.println('ha');
+		System.out.println("haha");
+		System.out.println();
+		
+		System.out.println(i);
+		System.out.println();
+		
+		System.out.println(n);
+		System.out.println();
+		
+		System.out.println(i+n);
+		
+		
+
+	}
+
+}

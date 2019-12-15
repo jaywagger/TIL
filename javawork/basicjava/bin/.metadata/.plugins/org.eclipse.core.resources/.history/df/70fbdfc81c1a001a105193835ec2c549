@@ -1,0 +1,18 @@
+package chap05.array;
+//배열의 선언, 생선, 및 초기화를 한번에 처리하는 방법
+public class ArrayTest04 {
+
+	public static void main(String[] args) 
+	{
+		//다른 언어와 동일한 방법으로 선언하는 방법
+		int[] myarry = {10,20,30,40,50};
+		System.out.println("배열의 소요의 갯수: "+myarry.length);
+		System.out.println("----------------------------------");
+		
+		for(int i=0; i<myarry.length; i++)
+		{
+			System.out.println(myarry[i]);
+		}
+	}
+
+}

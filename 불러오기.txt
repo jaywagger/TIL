@@ -1,7 +1,0 @@
-import - general - existing proejcts into workplace
-
-test 오른쪽 버튼-빌드 패스-configure build path-libliaries -파일 첫 번째 누른다
-
-Alternate JRE 누름
-
-완료

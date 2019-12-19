@@ -1,0 +1,48 @@
+프로젝트 진행 
+
+1. 주제
+2. 기능: 난이도
+3. 데이터 추출. SQL
+
+manager
+
+insert into customer values('jang','1234','장동건', 1000,sysdate);
+
+num1 number,
+
+create table test(
+ num1 number,
+ num2 number(3),
+ num3 number(3,2),
+ num4 number (5,2),
+ num5 number (10,3),
+ num6 integer);
+
+insert into test values(125.88,125.88,125.88,125.88,1234.12345,125.88);
+
+create table product(
+ PDNO number primary key,
+ PDNAME varchar2(10),
+ PDSUBNAME varchar2(10) not null,
+ FACTNO varchar2(5),
+ PDDATE date,
+ PDCOST integer,
+ PDPRICE number,
+ PDAMOUNT number);
+
+create table factory(
+ FACTNO varchar2(5) primary key,
+ FACNAME varchar2(14) not null,
+ FACLOC varchar2(13));
+
+create table store(
+ STONO varchar2(5) primary key,
+ PDNAME varchar2(14) not null,
+ PDSUBNAME number,
+ FACTNO number,
+ PDPRICE number,
+ PDAMOUNT number);
+
+
+
+select ename||'의 급여는'||sal||' 입니다.'

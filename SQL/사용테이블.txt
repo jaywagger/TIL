@@ -1,0 +1,35 @@
+SQL> desc product
+ Name                                                                                                                                                                          Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- -------------
+ PDNO                                                                                                                                                                          NOT NULL NUMBER
+ PDNAME                                                                                                                                                                                 VARCHAR2(10)
+ PDSUBNAME                                                                                                                                                                     NOT NULL VARCHAR2(10)
+ FACTNO                                                                                                                                                                                 VARCHAR2(5)
+ PDDATE                                                                                                                                                                                 DATE
+ PDCOST                                                                                                                                                                                 NUMBER(38)
+ PDPRICE                                                                                                                                                                                NUMBER
+ PDAMOUNT                                                                                                                                                                               NUMBER
+
+SQL> desc factory
+ Name                                                                                                                                                                          Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- -------------
+ FACTNO                                                                                                                                                                        NOT NULL VARCHAR2(5)
+ FACNAME                                                                                                                                                                       NOT NULL VARCHAR2(14)
+ FACLOC                                                                                                                                                                                 VARCHAR2(13)
+
+SQL> desc sotre
+ERROR:
+ORA-04043: object sotre does not exist
+
+
+SQL> desc store
+ Name                                                                                                                                                                          Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- -------------
+ STONO                                                                                                                                                                         NOT NULL VARCHAR2(5)
+ PDNAME                                                                                                                                                                        NOT NULL VARCHAR2(14)
+ PDSUBNAME                                                                                                                                                                              NUMBER
+ FACTNO                                                                                                                                                                                 NUMBER
+ PDPRICE                                                                                                                                                                                NUMBER
+ PDAMOUNT                                                                                                                                                                               NUMBER
+
+SQL>

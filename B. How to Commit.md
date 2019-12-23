@@ -120,7 +120,7 @@ Date:   Thu Dec 5 16:54:01 2019 +0900
 
 ``` bash
 <<<<<<< HEAD
-$ git remote add 이름(origin) https://github.com/jaywagger/TIL.git
+$ git remote add desktop master https://github.com/jaywagger/workJY.git
 =======
 $ git remote add origin/이름 https://github.com/jaywagger/TIL.git
 >>>>>>> d538c9bec1bed09d79d78ed2b555fd219c9bab97

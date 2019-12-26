@@ -1,0 +1,88 @@
+```SQL
+	
+--- 첫 번째 테이틀 생성
+
+create table tb_mem (
+	mem_id varchar2(20) primary key,
+	mem_nm varchar2(10),
+	mem_cd varchar2(10),
+	pwd varchar2(20),
+	pwd_hint varchar2(20),
+	pwd_hint_ans varchar2(20),
+	ssn number,
+	birth_dt date,
+	male_flg varchar2(10),
+	tel_no number,
+	cell_no number, 
+	addr varchar2(50),
+	email varchar2(20),
+	email_rcv_flg varchar2(20),
+	mem_reg_dtm date );
+	
+		alter table tb_mem				---데이터타입 수정
+  		modify (men_id varchar2(20));
+	
+--- 두 번째
+create table tb_order (
+	ord_no number primary key,
+	mem_id varchar2(20),
+	ord_amt number,
+	rcvr_nm varchar2(20),
+	rcvr_tel_no number,
+	rcvr_addr varchar2(50),
+	dlv_corp_no number,
+	dlv_req varchar2(50),
+	ord_stat_cd varchar2(20),
+	ord_dtm date);
+
+alter table tb_order
+	add constraint tb_order_fk foreign key (mem_id)-----fk 설정
+	references tb_mem (mem_id);
+
+ 
+--- 세 번째
+create table tb_order_product(
+	ord_no number,			---fk
+	prd_no number,
+	qty number	);
+	
+alter table tb_order_product
+	add constraint tb_order_product_fk foreign key (ord_no)-----fk 설정
+	references tb_order (ord_no);
+	
+--- 네 번째
+create table tb_product (
+	prd_no number primary key,
+	prd_nm varchar2(20),
+	category_no number, ---fk
+	prd_des varchar2(50),
+	sell_prc_unit number,
+	sell_start_dt date,
+	sell_end_dt date,
+	dlv_constraint varchar2(20),
+	as_flg varchar2(20),
+	return_flg	 varchar2(20),
+	img_org_file_nm varchar2(20),
+	img_gen_file_nm varchar2(20),
+	reg_id varchar2(20),
+	red_dtm date);
+ 
+----------테이블 완성
+	TNAME                                                        TABTYPE
+------------------------------------------------------------ -------
+TB_MEN                                                       TABLE
+TB_ORDER                                                     TABLE
+TB_ORDER_PRODUCT                                             TABLE
+TB_PRODUCT                                                   TABLE
+
+---------------데이터 넣기-------------
+1 번째 테이블
+insert into tb_men(콜룸명 ) values ();
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD, PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG, TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('user01', '홍길동', 'USR', 'user01', '초등학교는?', '서울초등학교', '8010101234567', '19801010', 'F', '02-555-4567', '010-234-4567', '서울시 서초구 서초동 서초아파트 101동 1001호', 'abcd@email.com', 'Y', to_char(sysdate, 'YYYYMMDDHH24MISS'))  ; 
+ 
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD, PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG, TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('admin01', '관리자', 'ADM', 'admin01', '고등학교는?', '삼성고등학교', '7010101234567', '19701010', 'F', '02-555-1000', '010-100-2000', '서울시 서초구 서초동 삼성아파트 201동 1201호', 'admin@email.com', 'Y', to_char(sysdate, 'YYYYMMDDHH24MISS'))  ; 
+```
+

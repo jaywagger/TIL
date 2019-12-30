@@ -11,7 +11,7 @@
 아래의 설정은 이력 작성자 (author)를 설정하는 것으로, 컴퓨터에서 최초에 한번만 설정하면 된다.
 
 ```bash
-$ git config --global user.name
+$ git config --global user.name jaywagger
 ```
 
 $ git config --global user.email sos0841@naver.com
@@ -120,7 +120,9 @@ Date:   Thu Dec 5 16:54:01 2019 +0900
 
 ``` bash
 <<<<<<< HEAD
-$ git remote add desktop master https://github.com/jaywagger/workJY.git
+git remote add orgin https://github.com/jaywagger/SQL.git
+
+
 =======
 $ git remote add origin/이름 https://github.com/jaywagger/TIL.git
 >>>>>>> d538c9bec1bed09d79d78ed2b555fd219c9bab97

@@ -120,7 +120,7 @@ Date:   Thu Dec 5 16:54:01 2019 +0900
 
 ``` bash
 <<<<<<< HEAD
-git remote add orgin https://github.com/jaywagger/SQL.git
+git remote add desktop https://github.com/jaywagger/HTML.git
 
 
 =======

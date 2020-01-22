@@ -2,6 +2,6 @@ git pull desktop master
 
 git add .
 
-git commit -m 'Wednesday'
+git commit -m 'Tuesday'
 
 git push desktop master

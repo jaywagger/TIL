@@ -2,7 +2,7 @@ git pull desktop master
 
 git add .
 
-git commit -m 'Wednesday Desktop'
+git commit -m 'Friday Desktop'
 
 git push desktop master
 

@@ -56,9 +56,6 @@ $ git add images/ #특정 폴도를 업로드
 add를 한 이후에는 항상 status 명령어를 통해 원하는 대로되었는지 확인한다.
 
 ``` bash
-$ git add ,
-fatal: pathspec ',' did not match any files
-
 student@M15016 MINGW64 ~/Desktop/TIL (master)
 $ git add .
 warning: adding embedded git repository: TIL

@@ -10,4 +10,22 @@ git commit -m 'Friday Desktop'
 git push desktop master
 
 
-rm.git/index.lock 
+rm -f .git/index.lock
+
+
+
+
+
+
+git reset
+
+git reset HEAD~
+
+---
+git add .
+
+git reset remote
+
+git reset RemoteSystemsTempFiles/
+
+git commit -m "No more break. Big Data again"

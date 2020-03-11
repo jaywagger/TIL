@@ -32,3 +32,8 @@ root에서 하둡: su hadoop
 
 복사: 			[root@exam mytest]# cp -r /etc/sysconfig/ test
 			root폴더안에 있는 mytest 폴더에 test 라는 이름으로 폴더 복사
+
+폴더삭제:			[hadoop@hadoop01 ~]$ /home/hadoop/hadoop-1.2.1/bin/hadoop fs -rmr /mywork/word
+
+링크로 파일 다운		wget http://archive.apache.org/dist/sqoop/1.4.6/sqoop-1.4.6.bin__hadoop-1.0.0.tar.gz
+

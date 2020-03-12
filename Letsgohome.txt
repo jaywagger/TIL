@@ -28,4 +28,6 @@ git reset remote
 
 git reset RemoteSystemsTempFiles/
 
-git commit -m "No more break. Big Data again"
+git commit -m "Tuesday Big Data"
+
+git push desktop master

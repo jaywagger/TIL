@@ -24,10 +24,9 @@ git reset HEAD~
 ---
 git add .
 
-git reset remote
-
 git reset RemoteSystemsTempFiles/
 
-git commit -m "Tuesday Big Data"
+
+git commit -m "saturday Big Data"
 
 git push desktop master

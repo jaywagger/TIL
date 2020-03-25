@@ -19,6 +19,7 @@ $ git config --global user.email sos0841@naver.com
 > git config -- global 
 
 ```bash
+
 $ git config --global user.name 이름 유저이름
 $ git config --global user.email 이메일
 ```

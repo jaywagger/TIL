@@ -132,7 +132,7 @@ git stash pop
     ```bash
     git stash
     git pull origin master
-    git statsh pop
+    git stash pop
     # 그리고 다시 수정
     ```
 

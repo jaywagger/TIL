@@ -11,7 +11,13 @@
 아래의 설정은 이력 작성자 (author)를 설정하는 것으로, 컴퓨터에서 최초에 한번만 설정하면 된다.
 
 ```bash
-$ git config --global user.name jaywagger
+git config --global user.name jaywagger
+git config --global user.email sos0841@naver.com
+git init
+git add .
+git commit -m '메세지'
+git remote add desktop https://github.com/jaywagger/HTML.git
+git push origin/이름 master
 ```
 
 $ git config --global user.email sos0841@naver.com
@@ -181,8 +187,7 @@ $ git pull desktop master
 
    Github 홈페이지를 Refresh하면 업로드가 끝나 있다....
 
-<<<<<<< HEAD
----------------------------------------------------------------------------------------------------------
+
 
 ### 홈페이지에 있는 파일을 다운받기
 
@@ -215,4 +220,4 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 clone 방법
 
 git clone url
->>>>>>> d538c9bec1bed09d79d78ed2b555fd219c9bab97
+>>>>>>> 

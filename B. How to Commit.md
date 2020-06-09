@@ -15,9 +15,9 @@ git config --global user.name jaywagger
 git config --global user.email sos0841@naver.com
 git init
 git add .
-git commit -m '메세지'
-git remote add desktop https://github.com/jaywagger/HTML.git
-git push origin/이름 master
+git commit -m 'init'
+git remote add laptop https://github.com/jaywagger/androidLogin.git
+git push laptop master
 ```
 
 $ git config --global user.email sos0841@naver.com
